@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { SummaryComponent } from './components/summary/summary.component';
@@ -8,6 +8,7 @@ import { TemperatureComponent } from './components/temperature/temperature.compo
 import { TpwComponent } from './components/tpw/tpw.component';
 import { ChartComponent } from './components/chart/chart.component';
 import { DayTileComponent } from './components/day-tile/day-tile.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -20,7 +21,9 @@ import { DayTileComponent } from './components/day-tile/day-tile.component';
     DayTileComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
